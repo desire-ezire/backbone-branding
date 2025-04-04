@@ -8,19 +8,13 @@ const Layout = () => {
       <div>
         <div className="px-14">
             <Navbar />
-            <div className="h-screen bg-amber-50">
-                <Outlet/>
-            </div>
-            <div className="h-screen bg-amber-50">
-                <Outlet/>
-            </div>            <div className="h-screen bg-amber-50">
-                <Outlet/>
-            </div>            <div className="h-screen bg-amber-50">
+            <div className="h-screen">
                 <Outlet/>
             </div>
         </div>
-
-        <Footer/>
+        <div className='bg-black text-white mt-18 pt-18 px-14 pb-8'>
+            <Footer/> 
+        </div>
       </div>
     );
 };

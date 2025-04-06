@@ -5,17 +5,17 @@ import Footer from "./Footer.jsx";
 
 const Layout = () => {
     return (
-      <div>
+      <>
         <div className="px-14">
-            <Navbar />
-            <div className="h-screen">
+            <Navbar/>
+            <div>
                 <Outlet/>
             </div>
         </div>
-        <div className='bg-black text-white mt-18 pt-18 px-14 pb-8'>
+        <div className='footer'>
             <Footer/> 
         </div>
-      </div>
+      </>
     );
 };
 

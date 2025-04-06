@@ -3,14 +3,21 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP, FaBehance } from 
 
 const Footer = () => {
   return (
-    <div>
-        <div className='flex justify-between'>
+    <>
+        <div className='
+                        sm:flex sm:flex-col
+                        md:flex md:flex-col
+                        lg:flex lg:justify-between lg:flex-row
+                        '>
             <div className='text-4xl uppercase'>
                 <h2>info@backbonebranding.com</h2>
                 <h2 className='mt-8'>pr@backbonebranding.com</h2>
                 <h2 className='mt-8'>+ 374 91 366 008</h2>
             </div>
-            <div>
+            <div className='sm:mt-7
+                            md:mt-10
+                            lg:mt-0
+                            '>
                 <div className='inline-flex'>
                     <div className='flex flex-col text-xl pr-8'>
                         <td>WORKS</td>
@@ -35,12 +42,15 @@ const Footer = () => {
             <FaLinkedinIn />
         </div>
         
-        <div className='flex justify-between mt-14 text-[#7b7b7b]'>
+        <div className='mt-14 text-[#7b7b7b]
+                        sm:flex sm:flex-col
+                        md:flex md:flex-row md:justify-between
+                        lg:flex lg:flex-row lg:justify-between'>
             <p>&copy; ALL RIGHTS RESERVED 2025</p>
 
             <p>BY <span className='font-bold'>CONCEPT STUDIO</span></p>
         </div>
-    </div>
+    </>
   )
 }
 

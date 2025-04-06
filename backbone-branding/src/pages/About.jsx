@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-const About = () => {
+function About({ setCursorVariant }) {
   return (
-    <div>About</div>
-  )
+    <div
+      onMouseEnter={() => setCursorVariant("pageVariant")}
+      onMouseLeave={() => setCursorVariant("default")}
+    >
+      <h1
+        onMouseEnter={() => setCursorVariant("text")}
+        onMouseLeave={() => setCursorVariant("pageVariant")}
+      >
+        This is the About Page
+      </h1>
+    </div>
+  );
 }
 
-export default About
+export default About;

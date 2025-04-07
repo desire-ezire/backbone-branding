@@ -8,7 +8,7 @@ const Home = () => {
         <div className="h-full overflow-hidden">
           <iframe 
             src="https://player.vimeo.com/video/822957118?muted=1&autoplay=1&loop=1&background=1&controls=0"
-            className="w-426 h-240 object-cover"
+            className="w-426 h-240 object-cover pointer-events-none"
           ></iframe>
         </div>
         <div className="text-8xl font-bold mt-20 space-y-7">

@@ -9,6 +9,7 @@
 
 * {
   font-family: 'Gilroy', sans-serif;
+  cursor: none;
 }
 
 @layer components{
@@ -16,4 +17,3 @@
     @apply bg-black text-white mt-18 pt-18 px-14 pb-8;
   }
 }
-
